@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&family=Zen+Maru+Gothic:wght@300;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&family=Zen+Maru+Gothic:wght@500&display=swap" rel="stylesheet">
+    <title>文字数チェッカー</title>
+</head>
+<body>
+    <div id="header">
+        <p>文字数チェッカー</p>
+    </div>
+
+    <div id="main">
+
+        <div id="input">
+            <textarea></textarea>
+            <div id="btn">
+                <button id="check">文字数をチェック！</button>
+                <button id="reset">リセット</button>
+            </div>
+        </div>
+
+        <div id="result" class="hidden">
+            <p>文字数は<span></span>文字です</p>
+            <p id="des" class="arrow">詳細を表示</p>
+
+            <div id="menu" class="hidden2">
+                <table>
+                    <tr><th>文字数(記号あり)</th> <td id="alltext"></td> </tr>
+                    <tr><th>文字数(記号なし)</th> <td id="nontext"></td> </tr>
+                    <tr><th>ひらがな</th> <td id="hiragana"></td> </tr>
+                    <tr><th>カタカナ</th> <td id="katakana"></td> </tr>
+                    <tr><th>漢字</th> <td id="kanji"></td> </tr>
+                    <tr><th>アルファベット</th> <td id="alpha"></td> </tr>
+                    <tr><th>原稿用紙換算(1枚400文字)</th> <td id="paper"></td> </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
