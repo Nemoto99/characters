@@ -142,6 +142,8 @@ div#menu table th {
 div#menu table th, div#menu table td{
     border-bottom: 1px solid #000 ;
     padding: 9px; 
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Zen Maru Gothic', serif;
 }
 
 div#menu table tr:last-child td,
